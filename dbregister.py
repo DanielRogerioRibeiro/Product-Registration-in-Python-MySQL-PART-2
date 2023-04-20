@@ -36,6 +36,11 @@ def funcao_principal():
     dados = (str(linha1),str(linha2),str(linha3),categoria)
     cursor.execute(comando_SQL,dados)
     banco.commit()
+    #Apagando o texto da tela
+    formulario.lineEdit.setText("")
+    formulario.lineEdit_2.setText("")
+    formulario.lineEdit_3.setText("")
+
     
 
 app=QtWidgets.QApplication([])
