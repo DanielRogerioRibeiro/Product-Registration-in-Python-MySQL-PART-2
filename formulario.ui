@@ -31,8 +31,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>340</y>
+      <x>350</x>
+      <y>240</y>
       <width>111</width>
       <height>51</height>
      </rect>
@@ -632,7 +632,7 @@ color: rgb(255, 255, 255);</string>
    <widget class="QRadioButton" name="radioButton">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>20</x>
       <y>310</y>
       <width>111</width>
       <height>21</height>
@@ -689,7 +689,7 @@ color: rgb(255, 255, 255);</string>
    <widget class="QRadioButton" name="radioButton_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>20</x>
       <y>340</y>
       <width>121</width>
       <height>21</height>
@@ -746,7 +746,7 @@ color: rgb(255, 255, 255);</string>
    <widget class="QRadioButton" name="radioButton_3">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>20</x>
       <y>280</y>
       <width>101</width>
       <height>21</height>
@@ -824,7 +824,7 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>20</x>
       <y>240</y>
       <width>101</width>
       <height>31</height>
@@ -874,6 +874,88 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Categoria:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>360</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Listar Cadastro</string>
     </property>
    </widget>
   </widget>

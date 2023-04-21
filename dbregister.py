@@ -30,7 +30,7 @@ def funcao_principal():
     print("Código:",linha1)
     print("Descrição:",linha2)
     print("Preco",linha3)
-    
+
     cursor = banco.cursor()
     comando_SQL = "INSERT INTO produtos (codigo,descrição,preco,categoria) VALUES (%s,%s,%s,%s)"
     dados = (str(linha1),str(linha2),str(linha3),categoria)
@@ -41,11 +41,15 @@ def funcao_principal():
     formulario.lineEdit_2.setText("")
     formulario.lineEdit_3.setText("")
 
-    
+#Criando a função para chamar a segunda tela
+def chama_segunda_tela():
+    segunda_tela.show()
 
 app=QtWidgets.QApplication([])
 formulario=uic.loadUi("formulario.ui")
+segunda_tela=uic.loadUi("lista_de_cadastro.ui")
 formulario.pushButton.clicked.connect(funcao_principal)
+formulario.pushButton_2.clicked.connect(chama_segunda_tela)
 
 formulario.show()
 app.exec()
