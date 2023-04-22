@@ -44,12 +44,21 @@ def funcao_principal():
 #Criando a função para chamar a segunda tela
 def chama_segunda_tela():
     segunda_tela.show()
-    
+
+#mostrar a tabela
     cursor = banco.cursor()
     comando_SQL = "SELECT * FROM produtos"
     cursor.execute(comando_SQL)
     dados_lidos = cursor.fetchall()
-    print(dados_lidos)
+
+#exibindo os dados cadastrados na tabela   
+    segunda_tela.tableWidget.setRowCount(len(dados_lidos))
+    segunda_tela.tableWidget.setColumnCount(5)
+
+    for i in range(0, len(dados_lidos)):
+        for j in range(0, 5):
+            segunda_tela.tableWidget.setItem(i,j,QtWidgets.QTableWidgetItem(str(dados_lidos[i][j])))
+
 
 
 
